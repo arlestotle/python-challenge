@@ -10,9 +10,9 @@ election_csv = os.path.join("PyPoll", "Resources", "election_data.csv")
 # Open csv
 with open(election_csv, newline="", encoding="utf-8") as election:
     electioncsv = csv.reader(election, delimiter = ",")
-
-    # Find the total number of cast votes
     next(electioncsv)
+    # Find the total number of cast votes
+
     votes = list(electioncsv)
     count_votes = len(votes)
     count_votes
